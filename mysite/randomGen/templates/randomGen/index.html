@@ -1,0 +1,45 @@
+{% load staticfiles %}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Foundation & FontAwesome -->
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/trianglify/0.1.2/trianglify.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'randomGen/styles.css' %}" />
+<body>
+<header>
+Random pen spinning combo generator
+</header>
+<form action="" method="POST" id="post-form">
+  {% csrf_token %}
+  {{ form }}
+  
+
+  <button type ="submit">Generate</button>
+  <p>Combo:</p>
+  <div id ="results"> </div>
+</form>
+<!-- <div id ="results"> </div> -->
+
+<!-- {% if all_trick_list %}
+    <ul>
+    {% for trick in all_trick_list%}
+        <li>{{ trick.name }}</a></li>
+    {% endfor %}
+    </ul>
+    <p> Bam </p>
+{% else %}
+    <p>No tricks in database.ajsdfso</p>
+{% endif %} -->
+<!-- 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="./javascript.js"></script>
+<script
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCJnj2nWoM86eU8Bq2G4lSNz3udIkZT4YY&sensor=false">
+</script> -->
+<script src="{% static 'randomGen/main.js' %}"></script>
+
+
+</body>
