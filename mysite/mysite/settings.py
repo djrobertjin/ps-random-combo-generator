@@ -69,8 +69,6 @@ TEMPLATES = [
     },
 ]
 
-# CSRF_COOKIE_NAME = 'psdb'
-# CSRF_COOKIE_DOMAIN = 'http://127.0.0.1/'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
@@ -84,7 +82,6 @@ DATABASES = {
         'NAME': 'ps',
         #os.path.join(BASE_DIR, '/usr/local/var/mysql/ps.db'),
         'USER': 'root',
-        'PASSWORD': 'chchts',
         'HOST': '',
         'PORT': '',
 
